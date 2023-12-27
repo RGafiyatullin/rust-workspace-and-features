@@ -1,0 +1,12 @@
+[package]
+name = "full"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+c = {path = "../../lib/c", features = ["full"]}
+
+[dev-dependencies]
+c = {path = "../../lib/c", features = ["enable-mock-c"]}
